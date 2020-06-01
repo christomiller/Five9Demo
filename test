@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=UTF-8">
+  <title>inbound-script</title>
+  <script>
+var url = new URL(document.URL);
+// get access to URLSearchParams object
+var search_params = url.searchParams;
+var number1 = search_params.get('number1');
+var first_name = search_params.get('first_name');
+var last_name = search_params.get('last_name');
+var last_name = search_params.get('queue_time');
+var last_name = search_params.get('skill_name');
+var last_name = search_params.get('Last_Agent');
+var last_name = search_params.get('Last_Disposition');
+var last_name = search_params.get('Last_Mention');
+var last_name = search_params.get('Last_Disposition_DateTime');
+var last_name = search_params.get('Sentiment');
+var last_name = search_params.get('salesforce_id');
+var last_name = search_params.get('campaign_name');
+  </script>
+</head>
+<body>
+<div style="" align="center">
+<table style="width: 1030px; height: 102px;" class="ttable"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="width: 340px; text-align: center; vertical-align: top; height: 90px; background-color: white; color: rgb(0, 0, 153);">
+      <span style="font-family: Arial;"><span
+ style="font-weight: bold;"><big><big>Inbound <br>
+SMS Help<br>
+Request</big></big></span></span></td>
+      <td style="height: 104px; width: 490px;">
+      <table style="width: 522px; height: 95px;">
+        <tbody>
+          <tr>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 194px; background-color: rgb(204, 204, 204); color: black;">&nbsp;Queue
+Time</td>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 298px; background-color: white;">00:22:00</td>
+          </tr>
+          <tr>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 194px; background-color: rgb(204, 204, 204); color: black;">&nbsp;Origin</td>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 298px; background-color: white;">Campaign_Name</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table
+ style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="1">
+  <tbody>
+    <tr>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 199px; background-color: rgb(0, 0, 59);">Last
+Interaction</td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: white; width: 137px; background-color: rgb(0, 0, 59);">Interaction
+Type</td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: white; width: 170px; background-color: rgb(0, 0, 59);">Last
+Call Result</td>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 184px; background-color: rgb(0, 0, 59);">Last
+Agent</td>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 137px; background-color: rgb(0, 0, 59);">Web
+Visit</td>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 161px; background-color: rgb(0, 0, 59);">Sentiment</td>
+    </tr>
+    <tr>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 199px;"><small>
+      <script>
+document.write(Last_Disposition_DateTime);
+      </script></small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 137px;"><small>SMS</small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 170px;"><small>
+      <script>
+document.write(Last_Disposition);
+      </script></small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 184px;"><small>
+      <script>
+document.write(Last_Disposition);
+      </script></small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 137px;"><small><a
+ href="https://www.underarmour.com">Web Page</a></small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 161px;"><small>
+      <script>
+document.write(Sentiment); </script></small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+<br>
+<!--Table Two - Greeting and Call/Queue info-->
+<div style="" align="center">
+<table style="width: 1012px; height: 134px;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(235, 235, 235); color: rgb(0, 102, 0);">
+      <div style="text-align: center;"><span
+ style="font-family: Helvetica,Arial,sans-serif; color: black; text-decoration: underline; font-weight: bold;">Session
+Intents</span><br>
+      <span style="font-family: Helvetica,Arial,sans-serif;"></span></div>
+      <span style="font-family: Helvetica,Arial,sans-serif;"><br>
+      </span>
+      <div style="text-align: left;"><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><span
+ style="font-family: Helvetica,Arial,sans-serif;"></span></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><span
+ style="font-weight: bold;"></span><small><span
+ style="color: rgb(0, 0, 102);">Social Mentions:</span>&nbsp;
+      <span style="color: rgb(124, 0, 0);">
+      <script>
+document.write(Last_Mention)</script><br>
+      </span></small></big></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span
+ style="color: rgb(0, 0, 102);">Sentiment:</span>&nbsp;&nbsp;&nbsp;
+&nbsp; <span style="color: rgb(124, 0, 0);">&nbsp;&nbsp;&nbsp;
+      </span></small></big></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span
+ style="color: rgb(124, 0, 0);">&nbsp;
+      <script>
+document.write(Sentiment</script></span></small></big></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span
+ style="color: rgb(0, 0, 102);"></span></small></big></big></big><br>
+      <big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span
+ style="color: rgb(124, 0, 0);"></span></small></big></big></big></div>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <div style="text-align: center;"></div>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><big><font
+ style="font-weight: bold;" face="Arial"><span>
+      <p>Under Armour Customer<font style="font-weight: bold;"
+ face="Arial"><span></span></font></p>
+      </span></font><font face="Arial"><span></span></font><font
+ face="Arial"><span>
+      <p>&nbsp;&nbsp;<span style="font-weight: bold;"></span><font
+ style="font-weight: bold;" color="#aa005f">
+      <script>
+document.write(first_name + " " +last_name);
+      </script></font><span style="font-weight: bold;"></span><font><font
+ face="Arial"><span></span></font></font></p>
+      </span></font></big></div>
+      <big><font face="Arial"><span>
+      <p><font><font face="Arial"><span>&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;</span></font></font></p>
+      </span></font></big></div>
+      <span style="font-family: Helvetica,Arial,sans-serif;">
+      </span> <span> </span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<!--Table Three - IVA-->
+<div style="" align="center">
+<table border="0" cellpadding="2" cellspacing="2"
+ height="134" width="1012">
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+      <h3 style="color: rgb(0, 102, 0);"><font
+ face="Arial">What
+We Know About Customer:</font></h3>
+      <table class="table2">
+        <tbody>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>Name</small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif;"
+ class="column-2">
+            <script>
+document.write(first_name + " " +last_name);
+            </script></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>Sentiment</small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif;"
+ class="column-2"><span style="color: rgb(0, 153, 0);">
+            <script>document.write(Sentiment); </script></span></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>Phone Number</small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif;"
+ class="column-2">
+            <script>document.write(number1);
+            </script></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>Account Number</small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif;"
+ class="column-2">123456789</td>
+          </tr>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>Recent Order Number</small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif;"
+ class="column-2">ABCTWER</td>
+          </tr>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>CRM<br>
+            </small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif; font-weight: bold;"
+ class="column-2"><a
+ href="https://blueruby.lightning.force.com/lightning/r/Contact/0031C000031lEfpQAE/view"
+ target="_blank"><span style="text-decoration: underline;">Open
+Contact Record</span></a></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="width: 209px; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; text-align: left; background-color: rgb(0, 0, 121);"
+ class="column-1"><small>Case Management System</small></td>
+            <td
+ style="width: 769px; font-family: Helvetica,Arial,sans-serif; font-weight: bold;"
+ class="column-2"><a
+ href="https://ven01936.service-now.com/nav_to.do?uri=%2Fsn_customerservice_case_list.do%3Fsysparm_first_row%3D1%26sysparm_query%3DGOTOnumber%3DCS0000004%26sysparm_query_encoded%3DGOTOnumber%3DCS0000004%26sysparm_view%3Dcase"
+ target="_blank"><span style="text-decoration: underline;">Open
+Recent Case in ServiceNow</span></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;&nbsp; &nbsp;
+<div style="" align="center"><br>
+</div>
+</div>
+<!--Table Four - Images-->
+</body>
+</html>
