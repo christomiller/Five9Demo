@@ -9,23 +9,17 @@ var search_params = url.searchParams;
 var number1 = search_params.get('number1');
 var first_name = search_params.get('first_name');
 var last_name = search_params.get('last_name');
-var last_name = search_params.get('street');
-var last_name = search_params.get('city');
-var last_name = search_params.get('zip');
-var last_name = search_params.get('product');
-var last_name = search_params.get('email');
 var last_name = search_params.get('queue_time');
 var last_name = search_params.get('skill_name');
-var last_name = search_params.get('Intent');
-var last_name = search_params.get('Issue');
 var last_name = search_params.get('Last_Agent');
 var last_name = search_params.get('Last_Disposition');
 var last_name = search_params.get('Last_Mention');
-var last_name = search_params.get('Last_Disposition');
 var last_name = search_params.get('Last_Disposition_DateTime');
 var last_name = search_params.get('salesforce_id');
 var last_name = search_params.get('Sentiment);
+
 </script>
+
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css">
 <style>
 #myBtn {
@@ -134,7 +128,6 @@ Bart Ridge
 <table style="width: 1030px; height: 102px;" class="ttable" cellpadding="2" cellspacing="2">
 <tbody>
 <tr>
-<td style="height: 104px; text-align: center; vertical-align: middle; width: 175px;"><img alt="" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Dialogflow_logo.svg/120px-Dialogflow_logo.svg.png"><img alt="" src="https://www.dropboxusercontent.com/s/deszfo3ug4a9ceq/Five9Logo.jpg?dl=0"><img style="width: 147px; height: 91px;" alt="" src="https://i.pinimg.com/originals/e2/84/13/e28413b4ff7ccf42004c5bae60846c7c.jpg">
 </td>
 <td style="width: 340px; text-align: center; vertical-align: top; height: 90px; background-color: white; color: rgb(0, 0, 153);">
 <span style="font-family: Arial;"><span style="font-weight: bold;"><big><big>Inbound <br>
@@ -160,32 +153,36 @@ SMS Escalations</td>
 </tbody>
 </table>
 <br>
-<table style="text-align: left; margin-left: auto; margin-right: auto; height: 59px; width: 70%;" border="0" cellpadding="1" cellspacing="1">
+<table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="1" cellspacing="1">
 <tbody>
 <tr>
 <td style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 199px; background-color: rgb(0, 0, 59);">Last
 Interaction</td>
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: white; width: 137px; background-color: rgb(0, 0, 59);">Interaction
+Type</td>
 <td style="text-align: center; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: white; width: 170px; background-color: rgb(0, 0, 59);">Last
 Call Result</td>
 <td style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 184px; background-color: rgb(0, 0, 59);">Last
 Agent</td>
 <td style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 137px; background-color: rgb(0, 0, 59);">Web
 Visit</td>
+<td style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 161px; background-color: rgb(0, 0, 59);">Sentiment</td>
 </tr>
 <tr>
-<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 199px; height: 32px;"><small>
-<script>
-document.write(Last_Dispostion_DateTime);
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 199px;"><small><script>
+document.write(Last_Disposition_DateTime);
 </script></small></td>
-<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 170px; height: 32px;"><small>
-<script>
-document.write(last_Dispostion);
-</script></small></td>
-<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 184px; height: 32px;"><small>
-<script>
-document.write(Last_Agent);
-</script></small></td>
-<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 137px; height: 32px;"><small><a href="https://www.five9.com">Web Page</a></small></td>
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 137px;"><small>SMS</small></td>
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 170px;"><small>@Customer.last_disposition@</small></td>
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 184px;"><small><script>
+document.write(Last_Disposition);
+</script>
+</small></td>
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 137px;"><small><a href="https://www.underarmour.com">Web Page</a></small></td>
+<td style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 161px;"><small><script>
+document.write(Sentiment);
+</script>Sentiment
+</a></small></td>
 </tr>
 </tbody>
 </table>
@@ -205,14 +202,19 @@ Intents</span><br>
 </span>
 <div style="text-align: left;"><big style="font-family: Helvetica,Arial,sans-serif;"><big><span style="font-family: Helvetica,Arial,sans-serif;"></span></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><span style="font-weight: bold;"></span><small><span style="color: rgb(0, 0, 102);">Social Mentions:</span>&nbsp;
 <span style="color: rgb(124, 0, 0);">
+
 <script>
-document.write(Last_Message);
-</script><br>
+document.write(Last_Mention);
+</script>
+
+<br>
 </span></small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(0, 0, 102);">Sentiment:</span>&nbsp;&nbsp;&nbsp;
 &nbsp; <span style="color: rgb(124, 0, 0);">&nbsp;&nbsp;&nbsp;
-</span></small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(124, 0, 0);">&nbsp;
-<script>
-document.write(Sentiment)</script></span></small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(0, 0, 102);"></span></small></big></big></big><br>
+</span></small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(124, 0, 0);">&nbsp;<script>
+document.write(Sentiment
+</script></span></small></big></big></big><br>
+<big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(0, 0, 102);">Service Case:</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; <a href="https://blueruby.lightning.force.com/lightning/r/Task/00T1C00004xHCZpUAO/view?ws=%2Flightning%2Fr%2FContact%2F0031C000031lEfpQAE%2Fview" target="_blank"><span style="color: rgb(124, 0, 0);">00001234</span></a></small></big></big></big><br>
 <big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(124, 0, 0);"></span></small></big></big></big></div>
 </td>
 <td style="vertical-align: top; text-align: center;">
@@ -222,7 +224,9 @@ document.write(Sentiment)</script></span></small></big></big></big><big style="f
 <p>Under Armour Customer<font style="font-weight: bold;" face="Arial"><span></span></font></p>
 </span></font><font face="Arial"><span></span></font><font face="Arial"><span>
 <p>&nbsp;&nbsp;<span style="font-weight: bold;"></span><font style="font-weight: bold;" color="#aa005f">
-<script>
+  
+
+  <script>
 document.write(first_name + " " +last_name);
 </script></font><span style="font-weight: bold;"></span><font><font face="Arial"><span></span></font></font></p>
 </span></font></big></div>
@@ -251,29 +255,26 @@ We Know About Customer:</font></h3>
 <tbody>
 <tr class="row">
 <td style="background-color: rgb(0, 0, 153); width: 209px;" class="column-1">Name</td>
-<td style="width: 769px;" class="column-2">
-<script>
+<td style="width: 769px;" class="column-2">  <script>
 document.write(first_name + " " +last_name);
 </script></td>
 </tr>
 <tr class="row">
 <td style="background-color: rgb(0, 0, 153); width: 209px;" class="column-1">Sentiment</td>
-<td style="width: 769px;" class="column-2">&nbsp;<span style="color: rgb(0, 153, 0);">POSITIVE</span> <a href="builddotcom_whowhywhat_inbound_script_b.html#img1">Sentiment
+<td style="width: 769px;" class="column-2">&nbsp;<span style="color: rgb(0, 153, 0);">  <script>
+document.write(Sentiment);
+</script></span> <a href="#_1">Sentiment
 Visualizer</a></td>
 </tr>
 <tr class="row">
 <td style="background-color: rgb(0, 0, 153); width: 209px;" class="column-1">Phone Number</td>
-<td style="width: 769px;" class="column-2"> <script>
+<td style="width: 769px;" class="column-2">  <script>
 document.write(number1);
-</script>
-0</td>
+</script></td>
 </tr>
 <tr class="row">
 <td style="background-color: rgb(204, 204, 204); width: 209px;" class="column-1">Account Number</td>
-<td style="width: 769px;" class="column-2">
-<script>
-document.write(number1);
-</script></td>
+<td style="width: 769px;" class="column-2">123456789</td>
 </tr>
 <tr class="row">
 <td style="background-color: rgb(204, 204, 204); width: 209px;" class="column-1">Recent Order Number</td>
