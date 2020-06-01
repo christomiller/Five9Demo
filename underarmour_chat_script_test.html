@@ -9,6 +9,7 @@ var search_params = url.searchParams;
 var number1 = search_params.get('number1');
 var first_name = search_params.get('first_name');
 var last_name = search_params.get('last_name');
+var last_name = search_params.get('Last_Mention');
 
 </script>
 
@@ -187,7 +188,9 @@ Intents</span><br>
 <span style="font-family: Helvetica,Arial,sans-serif;"><br>
 </span>
 <div style="text-align: left;"><big style="font-family: Helvetica,Arial,sans-serif;"><big><span style="font-family: Helvetica,Arial,sans-serif;"></span></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><span style="font-weight: bold;"></span><small><span style="color: rgb(0, 0, 102);">Social Mentions:</span>&nbsp;
-<span style="color: rgb(124, 0, 0);">This is a Test<br>
+<span style="color: rgb(124, 0, 0);"><script>
+document.write(Last_Mention);
+</script><br>
 </span></small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(0, 0, 102);">Sentiment:</span>&nbsp;&nbsp;&nbsp;
 &nbsp; <span style="color: rgb(124, 0, 0);">&nbsp;&nbsp;&nbsp;
 </span></small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span style="color: rgb(124, 0, 0);">&nbsp;Postive</span></small></big></big></big><br>
@@ -233,8 +236,9 @@ We Know About Customer:</font></h3>
 <tbody>
 <tr class="row">
 <td style="background-color: rgb(0, 0, 153); width: 209px;" class="column-1">Name</td>
-<td style="width: 769px;" class="column-2">Jenna
-Hayward</td>
+<td style="width: 769px;" class="column-2"><script>
+document.write(first_name + " " +last_name);
+</script></td>
 </tr>
 <tr class="row">
 <td style="background-color: rgb(0, 0, 153); width: 209px;" class="column-1">Sentiment</td>
