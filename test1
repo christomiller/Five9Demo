@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>TEST</title>
+  <script>
+var url = new URL(document.URL);
+// get access to URLSearchParams object
+var search_params = url.searchParams;
+var number1 = search_params.get('number1');
+var first_name = search_params.get('first_name');
+var last_name = search_params.get('last_name');
+var last_name = search_params.get('street');
+var last_name = search_params.get('city');
+var last_name = search_params.get('zip');
+var last_name = search_params.get('product');
+var last_name = search_params.get('email');
+var last_name = search_params.get('queue_time');
+var last_name = search_params.get('skill_name');
+var last_name = search_params.get('Intent');
+var last_name = search_params.get('Issue');
+var last_name = search_params.get('Last_Agent');
+var last_name = search_params.get('Last_Disposition');
+var last_name = search_params.get('Last_Mention');
+var last_name = search_params.get('Last_Disposition');
+var last_name = search_params.get('Last_Disposition_DateTime');
+var last_name = search_params.get('salesforce_id');
+var last_name = search_params.get('Sentiment);
+  </script>
+</head>
+<body>
+firstname is <script>
+document.write(first_name);
+</script>
+br>
+lastname is <script>
+document.write(last_name);
+</script>
+br>
+Sentiment is <script>
+document.write(Sentiment);
+</script>
+br>
+number1 is <script>
+document.write(number1);
+</script>
+<br>
+</body>
+</html>
