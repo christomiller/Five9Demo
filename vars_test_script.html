@@ -26,6 +26,7 @@ var salesforce_id = search_params.get('salesforce_id');
 var Sentiment = search_params.get('Sentiment');
 var Last_Disposition = search_params.get('Last_Disposition');
 var demo_logo = search_params.get('demo_logo');
+var demo_company = search_params.get('demo_company');
 </script>
 
 <head>
@@ -277,7 +278,8 @@ document.write(Sentiment);
       <div style="text-align: left;">
       <div style="text-align: center;"><big><font
  style="font-weight: bold;" face="Arial"><span>
-      <p>SKO Outerwear Customer<font style="font-weight: bold;"
+      <p><script>
+document.write(demo_company); Customer<font style="font-weight: bold;"
  face="Arial"></p>
       </span><font face="Arial"></font><font
  face="Arial"><span>
