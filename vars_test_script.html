@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<script>
+var url = new URL(document.URL);
+// get access to URLSearchParams object
+var search_params = url.searchParams;
+
+var number1 = search_params.get('number1');
+var first_name = search_params.get('first_name');
+var last_name = search_params.get('last_name');
+var street = search_params.get('street');
+var city = search_params.get('city');
+var zip = search_params.get('zip');
+var product = search_params.get('product');
+var email = search_params.get('email');
+var queue_time= search_params.get('queue_time');
+var skill_name = search_params.get('skill_name');
+var campaign_name = search_params.get('campaign_name');
+var Intent = search_params.get('Intent');
+var Issue = search_params.get('Issue');
+var XLast_Mention = search_params.get('XLast_Mention');
+var Last_Agent = search_params.get('Last_Agent');
+var Last_Disposition_DateTime = search_params.get('Last_Disposition_DateTime');
+var salesforce_id = search_params.get('salesforce_id');
+var Sentiment = search_params.get('Sentiment');
+var Last_Disposition = search_params.get('Last_Disposition');
+var demo_logo = search_params.get('demo_logo');
+</script>
+
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=UTF-8">
+  <title>inbound-script</title>
+  <link
+ href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+ rel="stylesheet" type="text/css">
+  <style>
+#myBtn {
+border: none;
+border-radius: 3px;
+color: #fff;
+cursor: pointer;
+-webkit-appearance: button;
+font-weight: 400;
+line-height: normal;
+outline-style: none;
+padding: 0.5em 1em;
+text-transform: uppercase;
+background: #000099;
+font-family: "Lato", sans-serif;
+font-size: 14px;
+font-size: 1em;
+overflow: visible;
+box-sizing: inherit;
+}
+#myBtn:hover {
+background: #4e8416;
+}
+.image-title { display: block !important; color: #0096d6; font-size:
+1.42857rem; line-height: 1.25em; font-family: "Lato", sans-serif;
+}
+/* Title Table CSS */
+.ttable, th, td{ border: none;
+}
+/* Info Tables CSS */
+.table2 { border-collapse: collapse; border-spacing: 0; width: 100%;
+margin-bottom: 1em; border: none;
+}
+/* Column 1 CSS - Keys */
+.column-1 {
+background-color: #000099 !important;
+color: #fff;
+width: 75px;
+font-weight: 700;
+padding: 8px;
+}
+.column-1b {
+background-color: #rgb(0, 0, 153) !important;
+color: #fff;
+width: 75px;
+font-weight: 700;
+padding: 8px;
+}
+/* Column 2 CSS - Values */
+.column-2 {
+background-color: #e6e6e6 !important;
+color: #000000;
+width: 150px;
+font-weight: 700;
+}
+/* Hover CSS For Column 2 - Values */
+.column-2:hover {
+background-color: #ffffff !important;
+}
+/* Column i CSS - Values */
+.column-i {
+background-color: #e6e6e6 !important;
+color: #000000;
+width: 150px;
+font-weight: 700;
+}
+/* Hover CSS For Column i - Values */
+.column-i:hover {
+background-color: #666666 !important;
+}
+/* CSS for all Rows Except Title Table */
+.row {
+color: #5a5d60;
+font-family: "Lato", sans-serif;
+font-size: 14px;
+font-size: 1em;
+font-weight: 400;
+line-height: 1.7857;
+border-bottom: 1px solid #ddd;
+}
+/** LIGHTBOX MARKUP */
+.lightbox { /** Default lightbox to hidden */ display: none; /**
+Position and style */ position: fixed; z-index: 999; width: 100%;
+height: 100%; text-align: center; top: 0; left: 0; background:
+rgba(0,0,0,0.8);
+}
+.lightbox img { /** Pad the lightbox image */ max-width: 90%;
+max-height: 80%; margin-top: 2%;
+}
+.lightbox:target { /** Remove default browser outline */ outline:
+none; /** Unhide lightbox **/ display: block;
+}
+</body>
+</html></style>
+</head>
+<body>
+<!--
+Custom Agent Script
+To be loaded to a Five9 Campaign
+NOTE: ALL STYLING IS DONE VIA CSS AT THE BOTTOM
+Bart Ridge
+09/02/2019
+--><!-- Lightbox usage markup --><!-- lightbox container hidden with CSS --><a
+ href="#_" class="lightbox" id="img1"> <img
+ src="https://engage59.com/wp-content/uploads/2019/08/sentiment.jpg"></a>
+<!--Table One - Logo and Title-->
+<div style="" align="center">
+<table style="width: 1030px; height: 102px;" class="ttable"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+	
+     <td>
+
+<script>
+document.write("<img style='width: 147px; height: 91px;' src='",demo_logo,"'>");
+</script>
+      </td>
+
+      <td
+ style="width: 340px; text-align: center; vertical-align: top; height: 90px; background-color: white; color: rgb(0, 0, 153);">
+      <span style="font-family: Arial;"><span
+ style="font-weight: bold;"><big><big>Inbound <br>
+SMS Help<br>
+Request</big></big></span></span></td>
+      <td style="height: 104px; width: 490px;">
+      <table style="width: 522px; height: 95px;">
+        <tbody>
+          <tr>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 194px; background-color: rgb(204, 204, 204); color: black;">&nbsp;Queue
+Time</td>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 298px; background-color: white;"><script>
+document.write(queue_time);
+</script></td>
+          </tr>
+          <tr>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 194px; background-color: rgb(204, 204, 204); color: black;">&nbsp;Origin</td>
+            <td
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 298px; background-color: white;"><script>
+document.write(campaign_name);
+</script></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table
+ style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="1">
+  <tbody>
+    <tr>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 199px; background-color: #000099;">Last
+Interaction</td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: white; width: 170px; background-color: rgb(0, 0, 59);">Last
+Call Result</td>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 184px; background-color: rgb(0, 0, 59);">Last
+Agent</td>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 137px; background-color: rgb(0, 0, 59);">Web
+Visit</td>
+      <td
+ style="text-align: center; color: white; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 161px; background-color: rgb(0, 0, 59);">Sentiment</td>
+    </tr>
+    <tr>
+      
+	<td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 161px;"><small><script>
+document.write(Last_Disposition_DateTime);
+</script></small></td>
+  
+	  
+      <td
+ s<td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 161px;"><small><script>
+document.write(Last_Disposition);
+</script></small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 184px;"><small><script>
+document.write(Last_Agent);
+</script></small></td>
+      <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 137px;"><small><a
+ href="https://www.underarmour.com">Web Page</a></small></td>
+      
+	  <td
+ style="text-align: center; font-family: Helvetica,Arial,sans-serif; background-color: rgb(204, 204, 204); width: 161px;"><small><script>
+document.write(Sentiment);
+</script></small></td>
+
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+<br>
+<!--Table Two - Greeting and Call/Queue info-->
+<div style="" align="center">
+<table style="width: 1012px; height: 134px;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(235, 235, 235); color: rgb(0, 102, 0);">
+      <div style="text-align: center;"><span
+ style="font-family: Helvetica,Arial,sans-serif; color: black; text-decoration: underline; font-weight: bold;"><img style="width: 92px; height: 50px;"
+ alt=""
+ src="https://dl.dropboxusercontent.com/s/deszfo3ug4a9ceq/Five9Logo.jpg?dl=0">
+</span>
+      
+      <div style="text-align: left;"><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><span
+ style="font-weight: bold;"></span><small><span
+ style="color: rgb(0, 0, 102);">Social Mentions:</span>&nbsp;
+      <span style="color: rgb(124, 0, 0);"><script>
+document.write(XLast_Mention);
+</script><br>
+      </span></small></big></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span
+ style="color: rgb(0, 0, 102);">Sentiment:</span>&nbsp;&nbsp;&nbsp;
+&nbsp; <span style="color: rgb(124, 0, 0);">&nbsp;&nbsp;&nbsp;
+      </span></small></big></big></big><big
+ style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><span
+ style="color: rgb(124, 0, 0);">&nbsp;<script>
+document.write(Sentiment);
+</script>
+	      </span></small></big></big></big>
+	      
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <div style="text-align: center;"></div>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><big><font
+ style="font-weight: bold;" face="Arial"><span>
+      <p>SKO Outerwear Customer<font style="font-weight: bold;"
+ face="Arial"></p>
+      </span><font face="Arial"></font><font
+ face="Arial"><span>
+      <p><span style="color: rgb(124, 0, 0);"><script>
+document.write(first_name +" "+last_name);
+</script></span></font></p>
+ </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<!--Table Three - IVA-->
+<div style="" align="center">
+<table border="0" cellpadding="2" cellspacing="2"
+ height="134" width="1012">
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+      <h3 style="color: rgb(0, 102, 0);"><font
+ face="Arial">What
+We Know About Customer:</font></h3>
+      <table class="table2">
+        <tbody>
+          <tr class="row">
+            <td
+ style="background-color: rgb(0, 0, 153); width: 209px;"
+ class="column-1">Name</td>
+            <td style="width: 769px;" class="column-2"><script>
+document.write(first_name +" "+last_name);
+</script></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="background-color: rgb(0, 0, 153); width: 209px;"
+ class="column-1">Sentiment</td>
+            <td style="width: 769px;" class="column-2">&nbsp;<span
+ style="color: rgb(0, 153, 0);"><script>
+document.write(Sentiment);
+</script></span> <a
+ href="builddotcom_whowhywhat_inbound_script_b.html#img1">Sentiment
+Value</a></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="background-color: rgb(0, 0, 153); width: 209px;"
+ class="column-1">Phone Number</td>
+            <td style="width: 769px;" class="column-2"><script>
+document.write(number1);
+</script></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="background-color: rgb(204, 204, 204); width: 209px;"
+ class="column-1">Account Number</td>
+            <td style="width: 769px;" class="column-2">123456789</td>
+          </tr>
+          <tr class="row">
+            <td
+ style="background-color: rgb(204, 204, 204); width: 209px;"
+ class="column-1">Recent Order Number</td>
+            <td style="width: 769px;" class="column-2">ABCTWER</td>
+          </tr>
+          <tr class="row">
+            <td
+ style="background-color: rgb(204, 204, 204); width: 209px;"
+ class="column-1"><img style="width: 80px; height: 27px;"
+ alt=""
+ src="https://dl.dropboxusercontent.com/s/mngumylef1us8st/salesforce_logo.JPG?dl=0">
+
+            </td>
+            <td style="width: 769px;" class="column-2"><a
+ href="https://blueruby.lightning.force.com/lightning/r/Contact/0031C000031lEfpQAE/view"
+ target="_blank"><span style="text-decoration: underline;">Open
+Contact Record</span></a></td>
+          </tr>
+          <tr class="row">
+            <td
+ style="background-color: rgb(204, 204, 204); width: 209px;"
+ class="column-1"><img style="width: 103px; height: 24px;"
+ alt=""
+ src="https://dl.dropboxusercontent.com/s/dxd4ul1bhkqz9ie/servicenow_logo.JPG?dl=0">
+</td>
+            <td style="width: 769px;" class="column-2"><a
+ href="https://ven01936.service-now.com/nav_to.do?uri=%2Fsn_customerservice_case_list.do%3Fsysparm_first_row%3D1%26sysparm_query%3DGOTOnumber%3DCS0000004%26sysparm_query_encoded%3DGOTOnumber%3DCS0000004%26sysparm_view%3Dcase"
+ target="_blank"><span style="text-decoration: underline;">Open
+Recent Case in ServiceNow</span></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;&nbsp; &nbsp;
+<div style="" align="center"><br>
+</div>
+</div>
+<!--Table Four - Images-->
+</body>
+</html>
