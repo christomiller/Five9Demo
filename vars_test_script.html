@@ -27,6 +27,7 @@ var Sentiment = search_params.get('Sentiment');
 var Last_Disposition = search_params.get('Last_Disposition');
 var demo_logo = search_params.get('demo_logo');
 var demo_company = search_params.get('demo_company');
+var salesforce_id = search_params.get('salesforce_id');
 </script>
 
 <head>
@@ -353,7 +354,9 @@ document.write(number1);
 
             </td>
             <td style="width: 769px;" class="column-2"><a
- href="https://blueruby.lightning.force.com/lightning/r/Contact/0031C000031lEfpQAE/view"
+ href="https://blueruby.lightning.force.com/lightning/r/Contact/<script>
+document.write(salesforce_id);
+</script>/view"
  target="_blank"><span style="text-decoration: underline;">Open
 Contact Record</span></a></td>
           </tr>
