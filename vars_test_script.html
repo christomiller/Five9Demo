@@ -277,7 +277,9 @@ document.write(Sentiment);
 Mentions:</span></small></small></big></big></td>
             <td style="width: 285px;"><big
  style="font-family: Helvetica,Arial,sans-serif;"><big><big><small><small><span
- style="font-weight: bold;">@Customer.Last_Message@</span>
+ style="font-weight: bold;"><script>
+document.write(XLast_Mention);
+</script></span>
             </small></small></big></big></big></td>
           </tr>
           <tr>
@@ -286,7 +288,9 @@ Mentions:</span></small></small></big></big></td>
  style="font-family: Helvetica,Arial,sans-serif;"><big><small><small><span
  style="font-weight: bold;">Sentiment</span>:</small></small></big></big></td>
             <td style="width: 285px;"><big
- style="font-family: Helvetica,Arial,sans-serif;"><big><small>@Customer.Sentiment@</small></big></big></td>
+ style="font-family: Helvetica,Arial,sans-serif;"><big><small><script>
+document.write(Sentiment);
+</script></small></big></big></td>
           </tr>
         </tbody>
       </table>
