@@ -160,7 +160,28 @@ document.write(ArticleTitle_0);
             <td style="width: 769px;" class="column-2">&nbsp;<span
  style="color: rgb(0, 153, 0);"><script>
 document.write(ArticleSummary_0);
-</script></span> </td>
+</script>
+        <button onclick="copyText()">Copy</button>
+    <br />
+      
+    <h1>Copied Text:</h1><br />
+    <textarea id="textbox"></textarea>
+      
+    <script>
+        function copyText() {
+      
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                ("<script>
+document.write(ArticleSummary_0);
+</script>");
+        }
+    </script>      
+              
+              
+              
+              
+              </span> </td>
           </tr>
 
 
