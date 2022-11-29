@@ -1,6 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
 
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
 <script>
 var url = new URL(document.URL);
 // get access to URLSearchParams object
@@ -163,17 +178,10 @@ document.write(ArticleSummary_0);
         <button onclick="copyText()">Copy</button>
   
       
-    
-      
-    <script>
-        function copyText() 
-      
-            /* Copy text into clipboard */
-            navigator.clipboard.writeText
-                ("<script>
+    <input type="text" value="<script>
 document.write(ArticleSummary_0);
-</script>  
-              
+</script>" id="myInput">
+<button onclick="myFunction()">Copy</button>
              
               
               
